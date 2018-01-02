@@ -15,5 +15,5 @@ Route::get('/', function () {
     return view('home');
 });
 
-//Route::view('/portfolio', 'welcome');
-//Route::view('/contact', 'welcome');
+Route::view('/portfolio', 'portfolio');
+Route::view('/contact', 'contact');

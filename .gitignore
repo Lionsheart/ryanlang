@@ -2,7 +2,7 @@
 /public/storage
 /storage/*.key
 /vendor
-/.idea
+.idea
 composer.lock
 npm-debug.log
 yarn-error.log
