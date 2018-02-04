@@ -16,7 +16,7 @@ return [
     |
     */
 
-    'driver' => env('MAIL_DRIVER', 'smtp'),
+    'driver' => env('MAIL_DRIVER', 'log'),
 
     /*
     |--------------------------------------------------------------------------
@@ -56,8 +56,8 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
-        'name' => env('MAIL_FROM_NAME', 'Example'),
+        'address' => env('MAIL_FROM_ADDRESS', 'contact@fireboltdesign.com'),
+        'name' => env('MAIL_FROM_NAME', 'Firebolt Design'),
     ],
 
     /*
@@ -84,9 +84,9 @@ return [
     |
     */
 
-    'username' => env('MAIL_USERNAME'),
+    'username' => env('postmaster@mg.fireboltdesign.com'),
 
-    'password' => env('MAIL_PASSWORD'),
+    'password' => env('aa40005e56262867a8fd9553fec9e947'),
 
     /*
     |--------------------------------------------------------------------------

@@ -8354,6 +8354,27 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
+.hero {
+  height: 20vh;
+}
+
+.hero.home {
+  background: url("/images/bicycle.jpg") fixed;
+}
+
+.navbar {
+  border-radius: 0;
+}
+
+.nav li {
+  display: inline-block;
+}
+
+.profiles i {
+  display: inline-block;
+  margin: 1rem;
+}
+
 .thumbnails li {
   display: inline-block;
 }

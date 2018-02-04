@@ -11,12 +11,17 @@
   },
   "devDependencies": {
     "axios": "^0.17",
-    "bootstrap-sass": "v4.0.0-beta.3",
+    "bootstrap-sass": "v4.0.0",
     "cross-env": "^5.1",
     "jquery": "^3.2",
     "laravel-mix": "^1.0",
     "lodash": "^4.17.4",
-    "popper": "^1.0.1",
+    "popper": "^1.12.9",
     "vue": "^2.5.7"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "lightbox": "^0.5.0",
+    "popper.js": "^1.12.9"
   }
 }
