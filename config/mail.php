@@ -16,7 +16,7 @@ return [
     |
     */
 
-    'driver' => env('MAIL_DRIVER', 'log'),
+    'driver' => env('MAIL_DRIVER', 'smtp'),
 
     /*
     |--------------------------------------------------------------------------
@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
+    'host' => env('MAIL_HOST', 'smtp.gmail.com'),
 
     /*
     |--------------------------------------------------------------------------
@@ -56,7 +56,7 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'contact@fireboltdesign.com'),
+        'address' => env('MAIL_FROM_ADDRESS', 'lionsheart81@gmail.com'),
         'name' => env('MAIL_FROM_NAME', 'Firebolt Design'),
     ],
 
@@ -84,9 +84,9 @@ return [
     |
     */
 
-    'username' => env('postmaster@mg.fireboltdesign.com'),
+    'username' => env('lionsheart81@gmail.com'),
 
-    'password' => env('aa40005e56262867a8fd9553fec9e947'),
+    'password' => env('gebtettgtaosrlqi'),
 
     /*
     |--------------------------------------------------------------------------

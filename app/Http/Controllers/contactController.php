@@ -23,8 +23,8 @@ class contactController extends Controller
         $contact['msg'] = $request->get('msg');
 
         // Mail delivery logic goes here
-        Mail::to('ryan@fireboltdesign.com')->send(new ContactEmail($contact));
-
+        Mail::to('lionsheart81@gmail.com')->send(new ContactEmail($contact));
+        //Mail::to(config('mail.support.address'))->send(new ContactEmail($contact));
         flash('Your message has been sent!')->success();
 
         return redirect()->route('contact');
