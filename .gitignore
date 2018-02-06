@@ -1,8 +1,9 @@
 /node_modules
 /public/storage
-/storage/*.key
+/storage/*
+.key
 /vendor
-.idea
+.idea/*
 composer.lock
 npm-debug.log
 yarn-error.log
