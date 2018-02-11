@@ -16,7 +16,7 @@ return [
     |
     */
 
-    'driver' => env('MAIL_DRIVER', 'mailgun'),
+    'driver' => env('MAIL_DRIVER', 'smtp'),
 
     /*
     |--------------------------------------------------------------------------
@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'host' => env('MAIL_HOST', 'smtp.mailgun.com'),
+    'host' => env('MAIL_HOST', 'smtp.sendgrid.net'),
 
     /*
     |--------------------------------------------------------------------------
@@ -84,9 +84,9 @@ return [
     |
     */
 
-    'username' => env('lionsheart81@gmail.com'),
+    'username' => env('apikey'),
 
-    'password' => env('gebtettgtaosrlqi'),
+    'password' => env('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'),
 
     /*
     |--------------------------------------------------------------------------
