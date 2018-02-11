@@ -84,9 +84,9 @@ return [
     |
     */
 
-    'username' => env('apikey'),
+    'username' => env('lionsheart81'),
 
-    'password' => env('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'),
+    'password' => env('IQfj#lip60D0'),
 
     /*
     |--------------------------------------------------------------------------
