@@ -16,5 +16,5 @@ Route::get('/', function () {
 });
 
 Route::get('contact', 'contactController@create')->name('contact');
-Route::post('contact', 'ContactController@store')->name('contact.store');
+Route::post('contact', 'contactController@store')->name('contact.store');
 Route::view('/portfolio', 'portfolio');
