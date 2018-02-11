@@ -86,7 +86,7 @@ return [
 
     'username' => env('apikey'),
 
-    'password' => env('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'),
+    'password' => env('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'),
 
     /*
     |--------------------------------------------------------------------------
