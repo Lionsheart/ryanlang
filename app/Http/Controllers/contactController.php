@@ -13,22 +13,40 @@ class contactController extends Controller
         return view('contact');
     }
 
-    public function store(ContactFormRequest $request)
-    {
+//    public function store(ContactFormRequest $request)
+//    {
+//
+//        $contact = [];
+//
+//        $contact['name'] = $request->get('name');
+//        $contact['email'] = $request->get('email');
+//        $contact['msg'] = $request->get('msg');
+//
+//        // Mail delivery logic goes here
+//        Mail::to('lionsheart81@gmail.com')->send(new ContactEmail($contact));
+//        //Mail::to(config('mail.support.address'))->send(new ContactEmail($contact));
+//        flash('Your message has been sent!')->success();
+//
+//        return redirect()->route('contact');
+//
+//    }
 
-        $contact = [];
+	public function store(ContactFormRequest $request)
+	{
 
-        $contact['name'] = $request->get('name');
-        $contact['email'] = $request->get('email');
-        $contact['msg'] = $request->get('msg');
+		Mail::send('emails.contact',
+			array(
+				'name' => $request->get('name'),
+				'email' => $request->get('email'),
+				'user_message' => $request->get('msg')
+			), function($message)
+			{
+				$message->from('lionsheart81@gmail.com');
+				$message->to('lionsheart81@gmail.com', 'Admin')->subject('Website Feedback');
+			});
 
-        // Mail delivery logic goes here
-        Mail::to('lionsheart81@gmail.com')->send(new ContactEmail($contact));
-        //Mail::to(config('mail.support.address'))->send(new ContactEmail($contact));
-        flash('Your message has been sent!')->success();
+		return \Redirect::route('contact')->with('message', 'Thanks for contacting us!');
 
-        return redirect()->route('contact');
-
-    }
+	}
 
 }

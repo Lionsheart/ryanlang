@@ -1,7 +1,7 @@
 New contact form submission.
 
-Name: {{ $contact['name'] }}
+Name: {{ $name}}
 
-E-mail: {{ $contact['email'] }}
+E-mail: {{ $email }}
 
-Message: {{ $contact['msg'] }}
+Message: {{ $user_message }}
